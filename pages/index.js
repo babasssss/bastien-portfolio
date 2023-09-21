@@ -27,8 +27,9 @@ const Home = () => {
             Bonjour, {" "}✌ <br/> 
           </motion.h1>
           {/* Subtitle */}
-          <motion.h1
-            className="h2 flex"
+          <motion.h5
+            // className="h5 flex max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="h5 flex max-w-sm xl:max-w-3xl mx-auto xl:mx-0 mb-10 xl:mb-16"
             variants={fadeIn('down',0.3)} 
             initial="hidden" 
             animate="show">
@@ -36,7 +37,7 @@ const Home = () => {
             <span className="text-accent">
               <Type />
             </span>
-          </motion.h1>
+          </motion.h5>
           {/* BTN */}
           <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn/>

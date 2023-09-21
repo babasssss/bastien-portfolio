@@ -9,7 +9,7 @@ function Type() {
           "developpeur",
           "alternant",
           "nantais | saumurois",
-          `concepteur développeur web`
+          "concepteur développeur web"
 
         ],
         autoStart: true,
