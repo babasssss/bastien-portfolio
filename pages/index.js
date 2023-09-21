@@ -10,6 +10,7 @@ import {motion} from 'framer-motion'
 
 // variants
 import {fadeIn} from '../variants'
+import Type from "../components/Type";
 
 const Home = () => {
   return (
@@ -23,17 +24,19 @@ const Home = () => {
             initial="hidden" 
             animate="show"
             className="h1">
-            Transforming Ideas <br/> Into{' '}
-            <span className="text-accent">Digital Reality</span>
+            Bonjour, {" "}✌ <br/> 
           </motion.h1>
           {/* Subtitle */}
-          <motion.p 
-              className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
-              variants={fadeIn('down',0.3)} 
-              initial="hidden" 
-              animate="show">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </motion.p>
+          <motion.h1
+            className="h2 flex"
+            variants={fadeIn('down',0.3)} 
+            initial="hidden" 
+            animate="show">
+            Je suis {"\u00A0"}
+            <span className="text-accent">
+              <Type />
+            </span>
+          </motion.h1>
           {/* BTN */}
           <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn/>
