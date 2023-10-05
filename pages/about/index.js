@@ -24,19 +24,11 @@ const aboutData = [
     info: [
       {
         title: 'Web Development',
-        icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
-        ],
+        icons: ['FaHtml5','FaCss3','FaJs','FaReact','SiNextdotjs','SiFramer','FaWordpress', ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: ['FaFigma','SiAdobexd','SiAdobephotoshop'],icons: ['FaHtml5','FaCss3','FaJs','FaReact','SiNextdotjs','SiFramer','FaWordpress', ]
       },
     ],
   },
@@ -88,6 +80,20 @@ const aboutData = [
     ],
   },
 ];
+
+const mappageIcone = {
+  FaHtml5: FaHtml5,
+  FaCss3: FaCss3,
+  FaFigma:FaFigma,
+  SiAdobexd:SiAdobexd,
+  SiAdobephotoshop:SiAdobephotoshop,
+  FaJs:FaJs,
+  FaReact:FaReact,
+  SiNextdotjs:SiNextdotjs,
+  SiFramer:SiFramer,
+  FaWordpress:FaWordpress
+};
+
 
 // components
 import Avatar from '../../components/Avatar'
@@ -207,8 +213,9 @@ const About = () => {
                     <div className="">{item.stage}</div>
                     {/* icons */}
                     <div className="flex gap-x-4">
-                      {item.icons?.map((icon, itemIndex)=>{
-                        return <div key={itemIndex} className="text-2xl text-white">{icon}</div>;
+                      {item.icons?.map((nomIcone, indexIcone) => {
+                        const ComposantIcone = mappageIcone[nomIcone];
+                        return <ComposantIcone key={indexIcone} className="text-2xl text-white" />;
                       })}
                     </div>
                   </div>
