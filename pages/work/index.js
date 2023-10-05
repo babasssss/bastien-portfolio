@@ -39,7 +39,7 @@ const Work = () => {
             exit="hidden"  
             className='w-full xl:max-w-[65%]'>
             {/* Slider */}
-            <WorkSlider/>
+            <WorkSlider/><WorkSlider/>
           </motion.div>
         </div>
       </div>

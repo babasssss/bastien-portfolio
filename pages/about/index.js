@@ -225,6 +225,60 @@ const About = () => {
 
           </motion.div>
 
+
+          <motion.p 
+              variants={fadeIn('right', 0.4)} 
+              initial="hidden" 
+              animate="show" 
+              exit="hidden" 
+              className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
+              10 year ago, blalblall blalblall blalblall blalblall blalblall blalblall 
+              blalblallblalblall blalblall blalblallblalblall 
+            </motion.p>
+
+
+            <motion.p 
+              variants={fadeIn('right', 0.4)} 
+              initial="hidden" 
+              animate="show" 
+              exit="hidden" 
+              className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
+              10 year ago, blalblall blalblall blalblall blalblall blalblall blalblall 
+              blalblallblalblall blalblall blalblallblalblall 
+            </motion.p>
+
+
+            <motion.p 
+              variants={fadeIn('right', 0.4)} 
+              initial="hidden" 
+              animate="show" 
+              exit="hidden" 
+              className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
+              10 year ago, blalblall blalblall blalblall blalblall blalblall blalblall 
+              blalblallblalblall blalblall blalblallblalblall 
+            </motion.p>
+
+
+            <motion.p 
+              variants={fadeIn('right', 0.4)} 
+              initial="hidden" 
+              animate="show" 
+              exit="hidden" 
+              className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
+              10 year ago, blalblall blalblall blalblall blalblall blalblall blalblall 
+              blalblallblalblall blalblall blalblallblalblall 
+            </motion.p>
+
+            <motion.p 
+              variants={fadeIn('right', 0.4)} 
+              initial="hidden" 
+              animate="show" 
+              exit="hidden" 
+              className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
+              10 year ago, blalblall blalblall blalblall blalblall blalblall blalblall 
+              blalblallblalblall blalblall blalblallblalblall 
+            </motion.p>
+
         </div>
       </div>
     </>
