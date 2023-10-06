@@ -161,8 +161,8 @@ const About = () => {
               animate="show" 
               exit="hidden" 
               className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-              Je m'appelle Bastien, j'habite dans le Maine-et-Loire 
-              et je suis étudiant en informatique avec pour objectif d'explorer le dévelopement Web | Applicatif. 
+              Je m&apos;appelle Bastien, j&apos;habite dans le Maine-et-Loire 
+              et je suis étudiant en informatique avec pour objectif d&apos;explorer le dévelopement Web | Applicatif. 
               <br />Objectif : Aquérir mon master FullStack (2024).
             </motion.p>
 
