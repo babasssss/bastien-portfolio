@@ -17,6 +17,12 @@ import {
 } from "react-icons/si";
 
 
+let age = new Date().getFullYear() - 2002;
+
+if (new Date() < new Date(`${new Date().getFullYear()}-06-12`)) {
+    age -= 1;
+}
+
 //  data
 const aboutData = [
   {
@@ -33,32 +39,40 @@ const aboutData = [
     ],
   },
   {
-    title: 'awards',
+    title: 'Education',
     info: [
       {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
+        title: 'Baccalauréat Scientifique I.S.N (Informatique et Sciences du Numérique)',
+        stage: '2020 | Bac S',
       },
       {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
+        title: 'BTS S.I.O option SLAM (Solutions Logicielles et Applications Métiers)',
+        stage: '2022 | BTS SIO (slam)',
+      },
+      {
+        title: 'Bachelor Developpeur Web (Titre: Concepteur Développeur D\'application)',
+        stage: '2023 | LICENCE (BachelorDeveloppeur Web)',
       },
     ],
   },
   {
-    title: 'experience',
+    title: 'Langages',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Back End',
+        icons: ['FaHtml5','FaCss3','FaJs','FaReact','SiNextdotjs','SiFramer','FaWordpress', ],
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
+        title: 'UI/UX Design',
+        icons: ['FaFigma','SiAdobexd','SiAdobephotoshop'],icons: ['FaHtml5','FaCss3','FaJs','FaReact','SiNextdotjs','SiFramer','FaWordpress', ]
       },
       {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'Base de données',
+        icons: ['FaFigma','SiAdobexd','SiAdobephotoshop'],icons: ['FaHtml5','FaCss3','FaJs','FaReact','SiNextdotjs','SiFramer','FaWordpress', ]
+      },
+      {
+        title: 'Front End',
+        icons: ['FaFigma','SiAdobexd','SiAdobephotoshop'],icons: ['FaHtml5','FaCss3','FaJs','FaReact','SiNextdotjs','SiFramer','FaWordpress', ]
       },
     ],
   },
@@ -138,7 +152,7 @@ const About = () => {
               animate="show" 
               exit="hidden"  
               className="h2">
-              Capitavating <span className="text-accent">stories</span> birth magnificient design.
+              Quelques  <span className="text-accent">données</span> sur moi 😲
             </motion.h2>
 
             <motion.p 
@@ -147,8 +161,9 @@ const About = () => {
               animate="show" 
               exit="hidden" 
               className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-              10 year ago, blalblall blalblall blalblall blalblall blalblall blalblall 
-              blalblallblalblall blalblall blalblallblalblall 
+              Je m'appelle Bastien, j'habite dans le Maine-et-Loire 
+              et je suis étudiant en informatique avec pour objectif d'explorer le dévelopement Web | Applicatif. 
+              <br />Objectif : Aquérir mon master FullStack (2024).
             </motion.p>
 
             {/* Counters */}
@@ -163,10 +178,10 @@ const About = () => {
                 {/* experience */}
                 <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                   <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
-                    <CountUp start={0} end={10} duration={5}/> +
+                    <CountUp start={0} end={age} duration={5}/>
                   </div>
                   <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                    Years of experience
+                    Age
                   </div>
                 </div>
                 {/* cleints */}
@@ -203,14 +218,24 @@ const About = () => {
               })}
             </div>
 
+
+
             <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start ">
+              {/* conditionally render extra title */}
+              {aboutData[index].title === "Langages" && (
+                <h3 className="text-xl text-white">Mes<span className="text-accent"> technologies </span>préférées</h3>
+              )}
+
               {aboutData[index].info.map((item, itemIndex)=>{
                 return (
-                  <div key={itemIndex} className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60">
+                  <div key={itemIndex} className="flex-1 flex flex-col gap-y-2 max-w-max items-start text-white/60">
+
+
+
+                    {/* stage as an intro */}
+                    <p className="text-sm font-semibold text-white/70">{item.stage}</p>
                     {/* title */}
-                    <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                    <div className="hidden md:flex">-</div>
-                    <div className="">{item.stage}</div>
+                    <div className="font-light text-justify">{item.title}</div>
                     {/* icons */}
                     <div className="flex gap-x-4">
                       {item.icons?.map((nomIcone, indexIcone) => {
@@ -223,61 +248,12 @@ const About = () => {
               })}
             </div>
 
+
+
+
           </motion.div>
 
 
-          <motion.p 
-              variants={fadeIn('right', 0.4)} 
-              initial="hidden" 
-              animate="show" 
-              exit="hidden" 
-              className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-              10 year ago, blalblall blalblall blalblall blalblall blalblall blalblall 
-              blalblallblalblall blalblall blalblallblalblall 
-            </motion.p>
-
-
-            <motion.p 
-              variants={fadeIn('right', 0.4)} 
-              initial="hidden" 
-              animate="show" 
-              exit="hidden" 
-              className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-              10 year ago, blalblall blalblall blalblall blalblall blalblall blalblall 
-              blalblallblalblall blalblall blalblallblalblall 
-            </motion.p>
-
-
-            <motion.p 
-              variants={fadeIn('right', 0.4)} 
-              initial="hidden" 
-              animate="show" 
-              exit="hidden" 
-              className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-              10 year ago, blalblall blalblall blalblall blalblall blalblall blalblall 
-              blalblallblalblall blalblall blalblallblalblall 
-            </motion.p>
-
-
-            <motion.p 
-              variants={fadeIn('right', 0.4)} 
-              initial="hidden" 
-              animate="show" 
-              exit="hidden" 
-              className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-              10 year ago, blalblall blalblall blalblall blalblall blalblall blalblall 
-              blalblallblalblall blalblall blalblallblalblall 
-            </motion.p>
-
-            <motion.p 
-              variants={fadeIn('right', 0.4)} 
-              initial="hidden" 
-              animate="show" 
-              exit="hidden" 
-              className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-              10 year ago, blalblall blalblall blalblall blalblall blalblall blalblall 
-              blalblallblalblall blalblall blalblallblalblall 
-            </motion.p>
 
         </div>
       </div>
