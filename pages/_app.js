@@ -1,5 +1,5 @@
 import '../styles/globals.css';
-
+import '../styles/styles.css';
 // Composents
 import Layout from '../components/Layout';
 import Transition from '../components/Transition';
