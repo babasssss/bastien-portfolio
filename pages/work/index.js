@@ -21,16 +21,17 @@ const Work = () => {
               animate="show" 
               exit="hidden"   
               className='h2 xl:mt-12'>
-                My work <span className='text-accent'>.</span>
+                Mes projets <span className='text-accent'>.</span>
             </motion.h2>
-            <motion.p 
+            <motion.div
               variants={fadeIn('up', 0.4)} 
               initial="hidden" 
               animate="show" 
               exit="hidden"  
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-              Mollisqdft fugiat nulla aute qui dolor eu sit est magna. Ut esse in nisi irure cupidatat dolore fugiat nisi amet quis.
-            </motion.p>
+              <p className='mb-2'>Mes réalisations sont à la fois des projets professionnels et scolaires.</p>
+              <p className='mt-2'>Mes projets illustrent mon parcours et mon développement en tant que concepteur-développeur.</p>
+            </motion.div>
           </div>
           <motion.div 
             variants={fadeIn('down', 0.6)} 

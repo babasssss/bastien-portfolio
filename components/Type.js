@@ -6,7 +6,7 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "concepteur / dev",
+          "concepteur ",
           "développeur web",
           "en alternance",
           "nantais | saumurois",

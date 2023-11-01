@@ -101,7 +101,7 @@ const About = () => {
   return (
     <>
     
-    <div className="h-[calc(100%)] bg-primary/30 py-32 text-center xl:text-left ">
+    <div className="h-[calc(100%_+_40px)] bg-primary/30 py-32 text-center xl:text-left ">
 	    <Circles/>
         <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
           {/* text */}
@@ -186,7 +186,7 @@ const About = () => {
 
               {aboutData[index].title === "Education" ? (
                 // Section Éducation
-                <div className="relative pt-2 pr-2 max-w-xl mx-auto max-h-[390px] overflow-y-auto custom-scrollbar-education">
+                <div className="relative pt-2 pr-2 max-w-xl mx-auto max-h-[390px] oververflow-education custom-scrollbar-education">
                   {...aboutData[index].info
                   .sort((a, b) => b.stage.localeCompare(a.stage))
                   .map((education, eduIndex) => (

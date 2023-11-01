@@ -25,19 +25,25 @@
     padding: 10px 5px; 
   }
 }
+@media (min-width: 768px) {
 
-/* Scroll bar education  */
-.custom-scrollbar-education::-webkit-scrollbar {
-  width: 5px; 
-}
+  .oververflow-education{
+    overflow-y: auto;
+  }
+  /* Scroll bar education  */
+  .custom-scrollbar-education::-webkit-scrollbar {
+    width: 5px; 
+  }
+  
+  .custom-scrollbar-education::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  
+  .custom-scrollbar-education::-webkit-scrollbar-thumb {
+    background-color: rgba(241, 49, 37, .7);
+    border-radius: 10px; 
+    border: 30px solid transparent;
 
-.custom-scrollbar-education::-webkit-scrollbar-track {
-  background: transparent; 
-}
-
-.custom-scrollbar-education::-webkit-scrollbar-thumb {
-  background-color: rgba(241, 49, 37, .7);
-  border-radius: 10px; 
-  border: 30px solid transparent;
+  }
 }
 
