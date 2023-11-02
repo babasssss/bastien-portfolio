@@ -55,11 +55,10 @@ const WorkSlider = () => {
                       <div className='flex items-center justify-center relative overflow-hidden group'>
                         <Image src={image.path} width={500} height={300} alt='SOREAU Bastien' />
                         {/* overlay graddient */}
-                        <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[rgba(0,0,0,.5)] 
-                          to-[#4a22bd opacity-0 group-hover:opacity-80 transition-all duration-700]'>
-                        </div>
+                        <div className='absolute inset-0 bg-[rgba(0,0,0,0)] group-hover:bg-[rgba(0,0,0,.6)] transition-all duration-700'></div>
+                        
                         <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10  group-hover:xl-translate-y-20 transition-all duration-300'>
-                          <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em] '>
+                          <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em] text-shadow-voirplus'>
                             {/* url part 1 */}
                             <div className='delay-100'>VOIR</div>
                             {/* url part 2 */}

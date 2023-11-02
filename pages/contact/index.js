@@ -26,10 +26,11 @@ const Contact = () => {
             exit="hidden"  
             className="flex-1 flex flex-col gap-6 w-full mx-auto">
             {/* input group */}
-            <div className='flex gap-x-6 w-full'>
-              <input type='text' placeholder='nom' className='input'/>
-              <input type='email' placeholder='email' className='input'/>
+            <div className='flex flex-col sm:flex-row gap-4 w-full'>
+              <input type='text' placeholder='nom' className='input '/>
+              <input type='email' placeholder='email' className='input '/>
             </div>
+
             <input type='text' placeholder='objet' className='input'/>
             <textarea placeholder='message' className='textarea'></textarea>
             <button className='btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group'>
