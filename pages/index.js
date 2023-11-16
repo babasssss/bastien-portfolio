@@ -24,7 +24,7 @@ const Home = () => {
             initial="hidden" 
             animate="show"
             className="h1">
-            TESTTTTT, {" "}✌ <br/> 
+            Bonjour, {" "}✌ <br/> 
           </motion.h1>
           {/* Subtitle */}
           <motion.h5

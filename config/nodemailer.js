@@ -11,13 +11,7 @@ const transporter = nodemailer.createTransport({
   },
 })
 
-const mailOptions = {
-  from: process.env.SMTP_EMAIL,
-  to: process.env.SMTP_EMAIL,
-}
-
 
 export {
   transporter,
-  mailOptions
 }

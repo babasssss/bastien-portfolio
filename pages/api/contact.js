@@ -1,7 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
 import { data } from "autoprefixer"
-import { mailOptions,transporter } from "../../config/nodemailer"
+import { transporter } from "../../config/nodemailer"
+import ClientEmailContent from "../../components/ClientEmailContent"
+import ReactDOMServer from 'react-dom/server';
 
 const handler = async (req, res) => {
   if (req.method === "POST") {
@@ -11,13 +13,19 @@ const handler = async (req, res) => {
     }
   }
 
+  console.log('Mes infos:');
+  console.log(req.body);
   try {
+    const { name, email, objet, message } = req.body;
+    const htmlEmail = ReactDOMServer.renderToStaticMarkup(<ClientEmailContent name={name} email={email} objet={objet} message={message} />);
     await transporter.sendMail({
-      ...mailOptions,
-      subject: data.objet,
-      text: "This is a text string",
-      html: "<h1>Test title</h1><p>Some Body test</p>"
+      from: process.env.SMTP_EMAIL,
+      to: process.env.SMTP_EMAIL,
+      subject: "Contact - SOREAU Bastien",
+      text: "Confirmation",
+      html: htmlEmail,
     })
+    console.log('Send Email verified');
 
     return res.status(200).json({ success: true })
   } catch (error) {
