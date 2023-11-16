@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const ClientEmailContent = ({ name, email, objet, message }) => {
@@ -12,11 +13,6 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
       <meta content="width=device-width, initial-scale=1.0" name="viewport" />
       {/*[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/></o:OfficeDocumentSettings></xml><![endif]*/}
       {/*[if !mso]><!*/}
-      <link
-        href="https://fonts.googleapis.com/css?family=Montserrat"
-        rel="stylesheet"
-        type="text/css"
-      />
       {/*<![endif]*/}
       <style
         dangerouslySetInnerHTML={{
@@ -130,7 +126,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           tabIndex={-1}
                                           target="_blank"
                                         >
-                                          <img
+                                          <Image
                                             alt="Soreau Bastien"
                                             src="/logo.png"
                                             style={{
@@ -179,7 +175,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           color: "#a5a5a5",
                                           direction: "ltr",
                                           fontFamily:
-                                            'Georgia, Times, "Times New Roman", serif&display=optional',
+                                            'Georgia, Times, "Times New Roman", serif',
                                           fontSize: 17,
                                           fontWeight: 400,
                                           letterSpacing: 1,
@@ -229,7 +225,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           color: "#ffffff",
                                           direction: "ltr",
                                           fontFamily:
-                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&display=optional",
+                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
                                           fontSize: 40,
                                           fontWeight: 400,
                                           letterSpacing: 5,
@@ -276,7 +272,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           color: "#ffffff",
                                           direction: "ltr",
                                           fontFamily:
-                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&display=optional",
+                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
                                           fontSize: 100,
                                           fontWeight: 400,
                                           letterSpacing: 10,
@@ -326,7 +322,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           color: "#ffffff",
                                           direction: "ltr",
                                           fontFamily:
-                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&display=optional",
+                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
                                           fontSize: 30,
                                           fontWeight: 400,
                                           letterSpacing: 5,
@@ -368,7 +364,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           color: "#ffffff",
                                           direction: "ltr",
                                           fontFamily:
-                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&display=optional",
+                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
                                           fontSize: 60,
                                           fontWeight: 400,
                                           letterSpacing: 10,
@@ -412,7 +408,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           color: "#7747FF",
                                           direction: "ltr",
                                           fontFamily:
-                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&display=optional",
+                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
                                           fontSize: 46,
                                           fontWeight: 700,
                                           letterSpacing: "normal",
@@ -603,7 +599,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           color: "#000000",
                                           direction: "ltr",
                                           fontFamily:
-                                            'Georgia, Times, "Times New Roman", serif&display=optional',
+                                            'Georgia, Times, "Times New Roman", serif',
                                           fontSize: 30,
                                           fontWeight: 400,
                                           letterSpacing: 1,
@@ -649,7 +645,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           color: "#000000",
                                           direction: "ltr",
                                           fontFamily:
-                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&display=optional",
+                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
                                           fontSize: 22,
                                           fontWeight: 400,
                                           letterSpacing: 5,
@@ -659,7 +655,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           marginBottom: 0
                                         }}
                                       >
-                                        J'ai bien reçu votre message et je vous
+                                        J&apos;ai bien reçu votre message et je vous
                                         remercie.
                                       </h1>
                                     </td>
@@ -701,7 +697,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           color: "#000000",
                                           direction: "ltr",
                                           fontFamily:
-                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&display=optional",
+                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
                                           fontSize: 22,
                                           fontWeight: 400,
                                           letterSpacing: 0,
@@ -752,7 +748,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           color: "#000000",
                                           direction: "ltr",
                                           fontFamily:
-                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&display=optional",
+                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
                                           fontSize: 28,
                                           fontWeight: 400,
                                           letterSpacing: "normal",
@@ -776,8 +772,8 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                 </tbody>
                               </table>
                               <div
-                                className="spacer_block block-8"
-                                style={{ height: 25, lineHeight: 25, fontSize: 1 }}
+                                className="spacer_block block-10"
+                                style={{ height: 50, lineHeight: 50, fontSize: 1 }}
                               >
                                  
                               </div>
@@ -800,7 +796,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                       style={{ textAlign: "center" }}
                                     >
                                       <div align="center" className="alignment">
-                                        {/*[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://soreau.dev" style="height:47px;width:223px;v-text-anchor:middle;" arcsize="0%" strokeweight="0.75pt" strokecolor="#C1CEDC" fillcolor="#000000"><w:anchorlock/><v:textbox inset="0px,0px,0px,0px"><center style="color:#ffffff; font-family:Tahoma, sans-serif&display=optional; font-size:18px"><![endif]*/}
+                                        {/*[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://soreau.dev" style="height:47px;width:223px;v-text-anchor:middle;" arcsize="0%" strokeweight="0.75pt" strokecolor="#C1CEDC" fillcolor="#000000"><w:anchorlock/><v:textbox inset="0px,0px,0px,0px"><center style="color:#ffffff; font-family:Tahoma, sans-serif; font-size:18px"><![endif]*/}
                                         <a
                                           href="https://soreau.dev"
                                           style={{
@@ -819,7 +815,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                             paddingTop: 5,
                                             paddingBottom: 5,
                                             fontFamily:
-                                              "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&display=optional",
+                                              "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
                                             fontSize: 18,
                                             textAlign: "center",
                                             msoBorderAlt: "none",
@@ -831,6 +827,8 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                             style={{
                                               paddingLeft: 20,
                                               paddingRight: 20,
+                                              paddingTop: 10,
+                                              paddingBottom: 10,
                                               fontSize: 18,
                                               display: "inline-block",
                                               letterSpacing: 3
@@ -953,7 +951,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           tabIndex={-1}
                                           target="_blank"
                                         >
-                                          <img
+                                          <Image
                                             alt="Your-Logo"
                                             src="images/logo.png"
                                             style={{
@@ -1010,7 +1008,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                                   href="https://www.facebook.com"
                                                   target="_blank"
                                                 >
-                                                  <img
+                                                  <Image
                                                     alt="Facebook"
                                                     height={32}
                                                     src="images/facebook2x.png"
@@ -1031,7 +1029,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                                   href="https://www.instagram.com"
                                                   target="_blank"
                                                 >
-                                                  <img
+                                                  <Image
                                                     alt="Instagram"
                                                     height={32}
                                                     src="images/instagram2x.png"
@@ -1052,7 +1050,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                                   href="https://www.youtube.com"
                                                   target="_blank"
                                                 >
-                                                  <img
+                                                  <Image
                                                     alt="YouTube"
                                                     height={32}
                                                     src="images/youtube2x.png"
@@ -1103,7 +1101,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           color: "#ffffff",
                                           direction: "ltr",
                                           fontFamily:
-                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&display=optional",
+                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
                                           fontSize: 12,
                                           fontWeight: 400,
                                           letterSpacing: 0,
@@ -1149,7 +1147,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                         style={{
                                           color: "#a5a5a5",
                                           fontFamily:
-                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&display=optional",
+                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
                                           fontSize: 14,
                                           fontWeight: 400,
                                           lineHeight: "120%",
