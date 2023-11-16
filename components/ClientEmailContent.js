@@ -179,7 +179,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           color: "#a5a5a5",
                                           direction: "ltr",
                                           fontFamily:
-                                            'Georgia, Times, "Times New Roman", serif',
+                                            'Georgia, Times, "Times New Roman", serif&display=optional',
                                           fontSize: 17,
                                           fontWeight: 400,
                                           letterSpacing: 1,
@@ -229,7 +229,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           color: "#ffffff",
                                           direction: "ltr",
                                           fontFamily:
-                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
+                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&display=optional",
                                           fontSize: 40,
                                           fontWeight: 400,
                                           letterSpacing: 5,
@@ -276,7 +276,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           color: "#ffffff",
                                           direction: "ltr",
                                           fontFamily:
-                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
+                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&display=optional",
                                           fontSize: 100,
                                           fontWeight: 400,
                                           letterSpacing: 10,
@@ -326,7 +326,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           color: "#ffffff",
                                           direction: "ltr",
                                           fontFamily:
-                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
+                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&display=optional",
                                           fontSize: 30,
                                           fontWeight: 400,
                                           letterSpacing: 5,
@@ -368,7 +368,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           color: "#ffffff",
                                           direction: "ltr",
                                           fontFamily:
-                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
+                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&display=optional",
                                           fontSize: 60,
                                           fontWeight: 400,
                                           letterSpacing: 10,
@@ -412,7 +412,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           color: "#7747FF",
                                           direction: "ltr",
                                           fontFamily:
-                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
+                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&display=optional",
                                           fontSize: 46,
                                           fontWeight: 700,
                                           letterSpacing: "normal",
@@ -603,7 +603,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           color: "#000000",
                                           direction: "ltr",
                                           fontFamily:
-                                            'Georgia, Times, "Times New Roman", serif',
+                                            'Georgia, Times, "Times New Roman", serif&display=optional',
                                           fontSize: 30,
                                           fontWeight: 400,
                                           letterSpacing: 1,
@@ -649,7 +649,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           color: "#000000",
                                           direction: "ltr",
                                           fontFamily:
-                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
+                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&display=optional",
                                           fontSize: 22,
                                           fontWeight: 400,
                                           letterSpacing: 5,
@@ -701,7 +701,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           color: "#000000",
                                           direction: "ltr",
                                           fontFamily:
-                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
+                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&display=optional",
                                           fontSize: 22,
                                           fontWeight: 400,
                                           letterSpacing: 0,
@@ -752,7 +752,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           color: "#000000",
                                           direction: "ltr",
                                           fontFamily:
-                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
+                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&display=optional",
                                           fontSize: 28,
                                           fontWeight: 400,
                                           letterSpacing: "normal",
@@ -800,7 +800,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                       style={{ textAlign: "center" }}
                                     >
                                       <div align="center" className="alignment">
-                                        {/*[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://soreau.dev" style="height:47px;width:223px;v-text-anchor:middle;" arcsize="0%" strokeweight="0.75pt" strokecolor="#C1CEDC" fillcolor="#000000"><w:anchorlock/><v:textbox inset="0px,0px,0px,0px"><center style="color:#ffffff; font-family:Tahoma, sans-serif; font-size:18px"><![endif]*/}
+                                        {/*[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://soreau.dev" style="height:47px;width:223px;v-text-anchor:middle;" arcsize="0%" strokeweight="0.75pt" strokecolor="#C1CEDC" fillcolor="#000000"><w:anchorlock/><v:textbox inset="0px,0px,0px,0px"><center style="color:#ffffff; font-family:Tahoma, sans-serif&display=optional; font-size:18px"><![endif]*/}
                                         <a
                                           href="https://soreau.dev"
                                           style={{
@@ -819,7 +819,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                             paddingTop: 5,
                                             paddingBottom: 5,
                                             fontFamily:
-                                              "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
+                                              "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&display=optional",
                                             fontSize: 18,
                                             textAlign: "center",
                                             msoBorderAlt: "none",
@@ -1103,7 +1103,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                           color: "#ffffff",
                                           direction: "ltr",
                                           fontFamily:
-                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
+                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&display=optional",
                                           fontSize: 12,
                                           fontWeight: 400,
                                           letterSpacing: 0,
@@ -1149,7 +1149,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                         style={{
                                           color: "#a5a5a5",
                                           fontFamily:
-                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif",
+                                            "Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif&display=optional",
                                           fontSize: 14,
                                           fontWeight: 400,
                                           lineHeight: "120%",
