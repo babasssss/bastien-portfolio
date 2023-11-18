@@ -39,9 +39,6 @@ const Home = () => {
             </span>
           </motion.h5>
           {/* BTN */}
-          <div className='flex justify-center xl:hidden relative'>
-            <ProjectsBtn />
-          </div>
           <motion.div
             variants={fadeIn('down', 0.4)}
             initial='hidden'

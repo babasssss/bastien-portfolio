@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hcaptcha/react-hcaptcha": "^1.9.1",
     "@hookform/error-message": "^2.0.1",
     "@next/font": "^13.4.4",
     "framer-motion": "^10.12.16",

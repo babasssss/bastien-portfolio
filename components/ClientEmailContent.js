@@ -1,30 +1,7 @@
 import Image from 'next/image'
-import React, { useState, useEffect } from 'react'
-import logo from '../public/logo.png'
+import React from 'react'
 
-const ClientEmailContent = ({ name, email, objet, message }) => {
-  const [base64Image, setBase64Image] = useState('')
-  useEffect(() => {
-    const readImageToBase64 = async () => {
-      try {
-        const response = await fetch(logo.src) // Utilisez la propriété .src de l'image
-        const blob = await response.blob()
-        const reader = new FileReader()
-
-        reader.onload = () => {
-          const base64 = reader.result
-          setBase64Image(base64)
-        }
-
-        reader.readAsDataURL(blob)
-      } catch (error) {
-        console.error('Erreur lors de la conversion en base64 :', error)
-      }
-    }
-
-    readImageToBase64()
-  }, [])
-
+const ClientEmailContent = ({ name, email, objet, message }) => {('')
   const annee = new Date().getFullYear()
   const jour = `${new Date().getDate()} ${new Intl.DateTimeFormat('fr-FR', { month: 'long' }).format(new Date())} ${new Date().getFullYear()} ${new Date().toLocaleTimeString()}`
 
@@ -143,14 +120,14 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                         style={{ lineHeight: 10 }}
                                       >
                                         <a
-                                          href='http://www.example.com/'
+                                          href='https://soreau.dev'
                                           style={{ outline: 'none' }}
                                           tabIndex={-1}
                                           target='_blank' rel='noreferrer'
                                         >
-                                          <Image
+                                          <img 
                                             alt='Soreau Bastien'
-                                            src={{ base64Image }}
+                                            src="https://soreau.dev/_next/image?url=%2Flogo.png&w=1920&q=75"
                                             style={{
                                               display: 'block',
                                               height: '100px',
@@ -161,7 +138,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                             title='Soreau Bastien'
                                             width={120}
                                             height={100}
-                                          />
+                                            />
                                         </a>
                                       </div>
                                     </td>
@@ -467,8 +444,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                   msoTableRspace: '0pt',
                   backgroundColor: '#000000',
                   backgroundImage:
-                    'url("images/bastiensoreau_A_hooded_hacker_in_front_of_his_computer_in_the_d_ed3a7b3c-257e-4b68-a66b-c65a1da984cc.png")',
-                  backgroundRepeat: 'no-repeat',
+                    "https://soreau.dev/_next/image?url=%2Fbastien-soreau-email-hacker.png&w=1920&q=75",
                   backgroundSize: 'cover'
                 }}
                 width='100%'
@@ -949,14 +925,14 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                         style={{ lineHeight: 10 }}
                                       >
                                         <a
-                                          href='http://www.example.com/'
+                                          href='https://soreau.dev'
                                           style={{ outline: 'none' }}
                                           tabIndex={-1}
                                           target='_blank' rel='noreferrer'
                                         >
                                           <Image
                                             alt='Soreau Bastien Hacker'
-                                            src='/_next/image?url=%2Fbastien-soreau-email-hacker.png&w=1920&q=75'
+                                            src='https://soreau.dev/_next/image?url=%2Flogo.png&w=1920&q=75'
                                             style={{
                                               display: 'block',
                                               height: 'auto',
@@ -1009,12 +985,12 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                                 style={{ padding: '0 10px 0 10px' }}
                                               >
                                                 <a
-                                                  href='https://www.facebook.com'
+                                                  href='https://www.facebook.com/bastien.soreau'
                                                   target='_blank' rel='noreferrer'
                                                 >
                                                   <Image
                                                     alt='Soreau Bastien Facebook'
-                                                    src='/_next/image?url=%2Ffacebook.png&w=1920&q=75'
+                                                    src='https://soreau.dev/_next/image?url=%2Ffacebook.png&w=1920&q=75'
                                                     style={{
                                                       display: 'block',
                                                       height: 'auto',
@@ -1030,12 +1006,12 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                                 style={{ padding: '0 10px 0 10px' }}
                                               >
                                                 <a
-                                                  href='https://www.instagram.com'
+                                                  href='https://www.instagram.com/bastiensoreau/'
                                                   target='_blank' rel='noreferrer'
                                                 >
                                                   <Image
                                                     alt='Soreau Bastien Instagram'
-                                                    src='/_next/image?url=%2Finstagram.png&w=1920&q=75'
+                                                    src='https://soreau.dev/_next/image?url=%2Finstagram.png&w=1920&q=75'
                                                     style={{
                                                       display: 'block',
                                                       height: 'auto',
@@ -1051,12 +1027,12 @@ const ClientEmailContent = ({ name, email, objet, message }) => {
                                                 style={{ padding: '0 10px 0 10px' }}
                                               >
                                                 <a
-                                                  href='https://www.youtube.com'
+                                                  href='https://www.youtube.com/@bastiensoreau6156'
                                                   target='_blank' rel='noreferrer'
                                                 >
                                                   <Image
                                                     alt='Soreau Bastien YouTube'
-                                                    src='/_next/image?url=%2Fyoutube.png&w=1920&q=75'
+                                                    src='https://soreau.dev/_next/image?url=%2Fyoutube.png&w=1920&q=75'
                                                     style={{
                                                       display: 'block',
                                                       height: 'auto',

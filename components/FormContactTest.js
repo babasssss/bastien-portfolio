@@ -1,12 +1,22 @@
-import React, { useState } from "react";
+import React, { useState }  from "react";
 import { ErrorMessage } from "@hookform/error-message";
 import { useForm } from "react-hook-form"
 import {motion} from 'framer-motion'
 import {fadeIn} from '../variants'
 import { BsArrowRight } from "react-icons/bs";
 import { sendContactForm } from '../lib/api';
+import ParticlesContainer from "./ParticlesContainer";
 
-export default function FormContactTest() {
+
+{/* first lettre => capitalize */}
+const capitalizeFirstLetter = (event) => {
+  let value = event.target.value;
+  let newValue = value.replace(/(^\w{1})|(\.\s*\w{1})|(\?\s*\w{1})|(!\s*\w{1})/g, match => match.toUpperCase());
+  event.target.value = newValue;
+}
+
+const FormContactTest = () => {;
+    {/* Verif send email */}
   const [isEmailSent, setIsEmailSent] = useState(false);
 
   const {
@@ -16,6 +26,7 @@ export default function FormContactTest() {
   } = useForm({
     criteriaMode: "all"
   });
+
   const onSubmit =  async (data) => {
     console.log(data);
     try {
@@ -27,7 +38,6 @@ export default function FormContactTest() {
       setIsEmailSent(false);
     }
   }
-
 
 
   return isEmailSent ? (
@@ -79,7 +89,7 @@ export default function FormContactTest() {
               console.log("messages", messages);
               return messages
                 ? Object.entries(messages).map(([type, message]) => (
-                    <p className="text-left" key={type}>{message}</p>
+                    <p className="text-left p-error" key={type}>{message}</p>
                   ))
                 : null;
             }}
@@ -104,7 +114,7 @@ export default function FormContactTest() {
               console.log("messages", messages);
                   return messages
                     ? Object.entries(messages).map(([type, message]) => (
-                        <p className="text-left" key={type}>{message}</p>
+                        <p className="text-left p-error" key={type}>{message}</p>
                       ))
                     : null;
             }}
@@ -113,7 +123,12 @@ export default function FormContactTest() {
       </div>
 
       {/* Colonne pour le Champ OBJET */}
-      <input placeholder='Objet' name='objet' className='input-standard' 
+      <input 
+        placeholder='Objet' 
+        onInput={capitalizeFirstLetter}
+        name='objet' 
+        className='input-standard'
+        contenteditable="true"
         {...register("objet", {
           required: "Ce champ est obligatoire.",
           pattern: {
@@ -133,7 +148,7 @@ export default function FormContactTest() {
           console.log("messages", messages);
           return messages
             ? Object.entries(messages).map(([type, message]) => (
-                <p className="text-left" key={type}>{message}</p>
+                <p className="text-left p-error" key={type}>{message}</p>
               ))
             : null;
         }}
@@ -142,6 +157,7 @@ export default function FormContactTest() {
       {/* Colonne pour le Champ MESSAGE */}
       <textarea 
         placeholder='Votre message' 
+        onInput={capitalizeFirstLetter}
         name='message' 
         className='textarea'
         {...register("message", {
@@ -159,13 +175,13 @@ export default function FormContactTest() {
           console.log("messages", messages);
           return messages
             ? Object.entries(messages).map(([type, message]) => (
-                <p className="text-left" key={type}>{message}</p>
+                <p className="text-left p-error" key={type}>{message}</p>
               ))
             : null;
         }}
       />
 
-      <button type="submit"  className='btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group'>
+      <button type="submit" className='btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group'>
         <span className='group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500'>Envoyer</span>
         <BsArrowRight className='-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px] '/>
       </button>
@@ -175,3 +191,5 @@ export default function FormContactTest() {
 
 
 }
+
+export default FormContactTest;

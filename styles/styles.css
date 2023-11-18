@@ -227,15 +227,12 @@
 }
 
 
-p {
+.p-error {
   color: #bf1650;
   font-size: small
 }
 
-p::before {
+.p-error::before {
   display: inline;
   content: "⚠ ";
 }
-
-/* Input send email */
-

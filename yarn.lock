@@ -29,6 +29,13 @@
   resolved "https://registry.npmjs.org/@babel/helper-validator-identifier/-/helper-validator-identifier-7.22.15.tgz"
   integrity sha512-4E/F9IIEi8WR94324mbDUMo074YTheJmd7eZF5vITTeYchqAi6sYXRLHUVsmkdmY4QjfKTcB2jB7dVP3NaBElQ==
 
+"@babel/runtime@^7.17.9":
+  version "7.23.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.23.2.tgz#062b0ac103261d68a966c4c7baf2ae3e62ec3885"
+  integrity sha512-mM8eg4yl5D6i3lu2QKPuPH4FArvJ8KhTofbE7jwMUv9KX5mBvwPAqnV3MlyBNqdp9RyRKP6Yck8TrfYrPvX3bg==
+  dependencies:
+    regenerator-runtime "^0.14.0"
+
 "@babel/runtime@^7.20.7":
   version "7.22.15"
   resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.22.15.tgz"
@@ -88,6 +95,19 @@
   version "8.41.0"
   resolved "https://registry.npmjs.org/@eslint/js/-/js-8.41.0.tgz"
   integrity sha512-LxcyMGxwmTh2lY9FwHPGWOHmYFCZvbrFCBZL4FzSSsxsRPuhrYUg/49/0KDfW8tnIEaEHtfmn6+NPN+1DqaNmA==
+
+"@hcaptcha/loader@^1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@hcaptcha/loader/-/loader-1.0.9.tgz#7992fd1683a3ce1e6ac4da6f20ea373db38ffc51"
+  integrity sha512-HqsreHb5A9uVKW9HqlSX+AvNHIP0bd3uZPixWKKWD1C2+A6j9LpYf33Lua+zzvOksG4GtTIMJXes6IWAy8No/g==
+
+"@hcaptcha/react-hcaptcha@^1.9.1":
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/@hcaptcha/react-hcaptcha/-/react-hcaptcha-1.9.1.tgz#621f4b5abe58a1304b093da85d3fc2ddb86b81a4"
+  integrity sha512-Tvym9cl2RsYpyut2262XtNL8bJVfbXFuX9k1UdsMtVpmdvj8xqQMTr/yOTxiLGPqG1Abt9luSwSeLI4e1H/fsw==
+  dependencies:
+    "@babel/runtime" "^7.17.9"
+    "@hcaptcha/loader" "^1.0.9"
 
 "@hookform/error-message@^2.0.1":
   version "2.0.1"
