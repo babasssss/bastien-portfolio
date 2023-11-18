@@ -1,5 +1,5 @@
 // Notification personnel
-import React from 'react';
+import React from 'react'
 
 const NotificationEmailContent = ({ nom, email, objet, message }) => {
   return (
@@ -10,7 +10,7 @@ const NotificationEmailContent = ({ nom, email, objet, message }) => {
       <p>Objet : {objet}</p>
       <p>Message : {message}</p>
     </div>
-  );
-};
+  )
+}
 
-export default NotificationEmailContent;
+export default NotificationEmailContent

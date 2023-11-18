@@ -41,22 +41,24 @@
     @apply leading-[1.8] text-white/60 font-light;
   }
   .btn,
-  .inputEmail,
+  .input-standard,
   .input {
     @apply h-[52px];
   }
-  .input {
+  .input,
+  .input-error {
     @apply w-full h-[52px] rounded-lg pl-6 capitalize;
   }
-  .inputEmail {
+
+  .input-standard {
     @apply w-full h-[52px] rounded-lg pl-6;
   }
   .input,
-  .inputEmail,
+  .input-standard,
   .textarea {
     @apply bg-transparent outline-none focus:ring-1 focus:ring-accent border border-white/20 placeholder:text-white/30 placeholder:font-light;
   }
   .textarea {
-    @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
+    @apply w-full h-[180px] p-6 rounded-lg resize-none;
   }
 }
