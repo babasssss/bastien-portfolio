@@ -1,0 +1,19 @@
+name: Mon Workflow CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Exécuter un script
+      env:
+        SMTP_EMAIL: ${{ secrets.SMTP_EMAIL }}
+        SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+      run: |
+        echo "Email: $SMTP_EMAIL"
+        echo "Password: $SMTP_PASSWORD"
+        # Vous pouvez ajouter ici les étapes nécessaires pour votre build ou test
