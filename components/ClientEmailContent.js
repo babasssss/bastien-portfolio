@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React from 'react'
 
 const ClientEmailContent = ({ name, email, objet, message }) => {('')
@@ -490,7 +489,10 @@ const ClientEmailContent = ({ name, email, objet, message }) => {('')
                               <div
                                 className='spacer_block block-1'
                                 style={{
-                                  height: 800,
+                                  height: 'auto',
+                                  border: 0,
+                                  maxWidth: '100%',
+                                  width: '100%',
                                   lineHeight: 800,
                                   fontSize: 1
                                 }}
@@ -686,7 +688,8 @@ const ClientEmailContent = ({ name, email, objet, message }) => {('')
                                           letterSpacing: 0,
                                           lineHeight: '150%',
                                           textAlign: 'left',
-                                          msoLineHeightAlt: 33
+                                          msoLineHeightAlt: 33,
+                                          textAlign: 'center',
                                         }}
                                       >
                                         <p style={{ margin: 0, marginBottom: 16 }}>
@@ -930,7 +933,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {('')
                                           tabIndex={-1}
                                           target='_blank' rel='noreferrer'
                                         >
-                                          <Image
+                                          <img
                                             alt='Soreau Bastien Hacker'
                                             src='https://soreau.dev/_next/image?url=%2Flogo.png&w=1920&q=75'
                                             style={{
@@ -988,7 +991,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {('')
                                                   href='https://www.facebook.com/bastien.soreau'
                                                   target='_blank' rel='noreferrer'
                                                 >
-                                                  <Image
+                                                  <img
                                                     alt='Soreau Bastien Facebook'
                                                     src='https://soreau.dev/_next/image?url=%2Ffacebook.png&w=1920&q=75'
                                                     style={{
@@ -1009,7 +1012,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {('')
                                                   href='https://www.instagram.com/bastiensoreau/'
                                                   target='_blank' rel='noreferrer'
                                                 >
-                                                  <Image
+                                                  <img
                                                     alt='Soreau Bastien Instagram'
                                                     src='https://soreau.dev/_next/image?url=%2Finstagram.png&w=1920&q=75'
                                                     style={{
@@ -1030,7 +1033,7 @@ const ClientEmailContent = ({ name, email, objet, message }) => {('')
                                                   href='https://www.youtube.com/@bastiensoreau6156'
                                                   target='_blank' rel='noreferrer'
                                                 >
-                                                  <Image
+                                                  <img
                                                     alt='Soreau Bastien YouTube'
                                                     src='https://soreau.dev/_next/image?url=%2Fyoutube.png&w=1920&q=75'
                                                     style={{

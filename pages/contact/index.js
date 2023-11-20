@@ -17,7 +17,7 @@ const Contact = () => {
             animate="show" 
             exit="hidden" 
             className='h2 text-center mb-12'>
-            Contactez-<span className='text-accent'>moi.process.env.SMTP_EMAIL</span>
+            Contactez-<span className='text-accent'>moi.</span>
           </motion.h2>
   
             {/* form */}
